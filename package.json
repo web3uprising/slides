@@ -1,0 +1,15 @@
+{
+  "name": "web3up-slides",
+  "version": "1.0.0",
+  "description": "WEB3UP workshop slides",
+  "scripts": {
+    "start": "reveal-md ./ --watch",
+    "build": "rm -rf build && reveal-md ./ --static build",
+    "serve": "npx http-server build -p 1949"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "reveal-md": "^6.1.4"
+  },
+  "private": true
+}

@@ -1,0 +1,12 @@
+{
+  "width": 1280,
+  "height": 720,
+  "margin": 0.04,
+  "transition": "none",
+  "backgroundTransition": "fade",
+  "controls": true,
+  "progress": true,
+  "center": false,
+  "hash": true,
+  "slideNumber": "c/t"
+}

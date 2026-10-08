@@ -1,0 +1,12 @@
+{
+  "title": "WEB3UP",
+  "theme": "assets/theme.css",
+  "highlightTheme": "atom-one-dark",
+  "separator": "\r?\n---\r?\n",
+  "verticalSeparator": "\r?\n---v\r?\n",
+  "template": "./assets/templates/slide.html",
+  "listingTemplate": "./assets/templates/listing.html",
+  "assetsDir": ".",
+  "staticDirs": ["assets"],
+  "glob": "./decks/**/*slides.md"
+}
