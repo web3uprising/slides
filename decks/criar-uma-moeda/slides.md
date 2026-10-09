@@ -3,16 +3,16 @@ title: Criar uma moeda
 description: Workshop WEB3UP x ACM FEUP. Desenhar, lançar e pagar um fino com uma moeda própria na Polkadot Hub TestNet.
 ---
 
-<!-- .slide: class="center-title" -->
+<!-- .slide: class="hero" -->
 
 <div class="eyebrow">workshop · acm feup</div>
 
-# criar uma<br><em>moeda</em><span class="caret"></span>
+# Criar uma<br><em>moeda</em>
 
-<p class="sub">// web 3.0 · uma nova versão da internet</p>
+<p class="lead">Web 3.0, uma nova versão da internet.</p>
 
-<div class="meta">
-  <span class="hit">14 OUT · 15:00</span>
+<div class="pills">
+  <span class="primary">14 OUT · 15:00</span>
   <span>até 16:30</span>
   <span>sala B340, FEUP</span>
 </div>
@@ -24,12 +24,12 @@ Pedir já a toda a gente que tenha o telemóvel com bateria e o portátil aberto
 
 ---
 
-## hoje<em>_</em>
+## Hoje
 
 <div class="steps">
-  <div class="now"><i>[1]</i> desenhar a moeda: supply, inflação, taxas <b>ok</b></div>
-  <div class="now"><i>[2]</i> lançar a moeda numa plataforma <b>ok</b></div>
-  <div class="now"><i>[3]</i> pagar um fino num terminal de pagamento <b>ok</b></div>
+  <div><i>1</i> Desenhar a moeda: supply, inflação, taxas</div>
+  <div><i>2</i> Lançar a moeda numa plataforma</div>
+  <div><i>3</i> Pagar um fino num terminal de pagamento</div>
 </div>
 
 <p class="muted" style="margin-top:48px">Moedas de teste. Não valem dinheiro. Podes partir tudo.</p>
@@ -40,9 +40,9 @@ Três passos, 90 minutos. No fim, cada equipa tem uma moeda a circular na sala.
 
 ---
 
-## a agenda<em>_</em>
+## A agenda
 
-| hora | o quê |
+| Hora | O quê |
 |---|---|
 | 15:00 | porquê uma moeda |
 | 15:10 | desenhar a moeda |
@@ -52,15 +52,15 @@ Três passos, 90 minutos. No fim, cada equipa tem uma moeda a circular na sala.
 
 ---
 
-<!-- .slide: class="center-title" -->
+<!-- .slide: class="hero" -->
 
 <div class="eyebrow">parte 0 · 10 min</div>
 
-## porquê uma <em>moeda</em>?
+## Porquê uma <em>moeda</em>?
 
 ---
 
-## o banco que ninguém usava
+## O banco que ninguém usava
 
 - Abro um banco digital. Envias-me dinheiro, eu guardo, devolvo quando pedires.
 - Ninguém confia. Publico o código. Faço auditorias. Reescrevo tudo em Rust.
@@ -75,15 +75,15 @@ Confiamos porque há uma autoridade que nos protege se o banco se portar mal.
 
 ---v
 
-## duas formas de confiar
+## Duas formas de confiar
 
 <div class="cols">
   <div class="card">
-    <h3>autoridade</h3>
+    <h3>Autoridade</h3>
     <p>Um banco guarda o registo de quem tem quanto. Confias nele porque há regras, tribunais e polícia.</p>
   </div>
   <div class="card">
-    <h3>matemática</h3>
+    <h3>Matemática</h3>
     <p>Milhares de computadores guardam o mesmo registo. Ninguém o muda sozinho. Confias porque podes verificar.</p>
   </div>
 </div>
@@ -92,19 +92,19 @@ Confiamos porque há uma autoridade que nos protege se o banco se portar mal.
 
 ---v
 
-## web 1, 2 e 3
+## Web 1, 2 e 3
 
 <div class="cols" style="--n:3">
   <div class="card">
-    <h3>web 1</h3>
+    <h3>Web 1</h3>
     <p><strong>ler.</strong> Páginas estáticas. Quem publica é quem tem um servidor.</p>
   </div>
   <div class="card">
-    <h3>web 2</h3>
+    <h3>Web 2</h3>
     <p><strong>ler e escrever.</strong> Redes sociais. Tu crias, a plataforma fica com os dados e as regras.</p>
   </div>
   <div class="card">
-    <h3>web 3</h3>
+    <h3>Web 3</h3>
     <p><strong>ler, escrever e possuir.</strong> O que é teu fica numa rede pública. A tua chave prova que é teu.</p>
   </div>
 </div>
@@ -115,7 +115,7 @@ Uma moeda é o exemplo mais simples de "possuir" na internet. Por isso começamo
 
 ---v
 
-## onde vamos trabalhar
+## Onde vamos trabalhar
 
 <div class="cols">
   <div>
@@ -127,14 +127,14 @@ Uma moeda é o exemplo mais simples de "possuir" na internet. Por isso começamo
     </ul>
   </div>
   <div class="card">
-    <h3>a tua carteira</h3>
+    <h3>A tua carteira</h3>
     <p>Uma chave privada guardada no teu telemóvel. Quem tem a chave assina as transações e manda nas moedas.</p>
   </div>
 </div>
 
 ---
 
-## abre a carteira
+## Abre a carteira
 
 1. Abre o link da carteira no telemóvel.
 2. Toca em **Receber** e mostra o código à organização.
@@ -149,17 +149,17 @@ Isto demora: começar logo e seguir com a parte 1 em paralelo.
 
 ---
 
-<!-- .slide: class="center-title" -->
+<!-- .slide: class="hero" -->
 
 <div class="eyebrow">parte 1 · 25 min</div>
 
-## desenhar a <em>moeda</em>
+## Desenhar a <em>moeda</em>
 
 ---
 
-## seis decisões
+## Seis decisões
 
-| decisão | pergunta |
+| Decisão | Pergunta |
 |---|---|
 | nome e símbolo | como se chama? `FINO`? `FEUP`? |
 | quantidade inicial | quantas moedas existem no dia 1? |
@@ -170,15 +170,15 @@ Isto demora: começar logo e seguir com a parte 1 em paralelo.
 
 ---v
 
-## escassez ou inflação
+## Escassez ou inflação
 
 <div class="cols">
   <div class="card">
-    <h3>máximo fixo</h3>
+    <h3>Máximo fixo</h3>
     <p>Como a Bitcoin. Ninguém imprime mais. Se a procura sobe, o preço sobe. Quem chegou primeiro ganha.</p>
   </div>
   <div class="card">
-    <h3>inflação</h3>
+    <h3>Inflação</h3>
     <p>Como o euro. Há sempre moedas novas. Paga quem mantém o sistema, mas quem guarda moedas perde valor.</p>
   </div>
 </div>
@@ -187,7 +187,7 @@ Isto demora: começar logo e seguir com a parte 1 em paralelo.
 
 ---v
 
-## a taxa
+## A taxa
 
 - Cada pagamento paga uma percentagem **extra** para o dono da moeda.
 - A loja recebe sempre o valor exato.
@@ -198,7 +198,7 @@ Isto demora: começar logo e seguir com a parte 1 em paralelo.
 
 ---
 
-## exercício<em>_</em>
+## Exercício
 
 <p class="timer">5 minutos · em equipa</p>
 
@@ -212,26 +212,26 @@ Passar pelas mesas. Perguntas boas para fazer: quem vai querer a vossa moeda? O 
 
 ---
 
-<!-- .slide: class="center-title" -->
+<!-- .slide: class="hero" -->
 
 <div class="eyebrow">parte 2 · 25 min</div>
 
-## lançar a <em>moeda</em>
+## Lançar a <em>moeda</em>
 
 ---
 
-## o que acontece quando carregas em lançar
+## O que acontece quando carregas em lançar
 
 <div class="flow">
-  <div><b>1 · carteira</b>A carteira junta o código do contrato com as vossas seis decisões.</div>
-  <div><b>2 · assinatura</b>A tua chave assina a transação. Ninguém a pode alterar.</div>
-  <div><b>3 · bloco</b>A rede põe a transação num bloco. Custa cerca de 0,8 PAS.</div>
-  <div class="hot"><b>4 · endereço</b>A moeda passa a viver num endereço <code>0x…</code> para sempre.</div>
+  <div><b>1 · Carteira</b>A carteira junta o código do contrato com as vossas seis decisões.</div>
+  <div><b>2 · Assinatura</b>A tua chave assina a transação. Ninguém a pode alterar.</div>
+  <div><b>3 · Bloco</b>A rede põe a transação num bloco. Custa cerca de 0,8 PAS.</div>
+  <div class="hot"><b>4 · Endereço</b>A moeda passa a viver num endereço <code>0x…</code> para sempre.</div>
 </div>
 
 ---v
 
-## o contrato
+## O contrato
 
 ```solidity
 contract Moeda is ERC20, Ownable {
@@ -256,7 +256,7 @@ A única coisa nossa é a taxa: antes de mover o valor, move a taxa para o tesou
 
 ---
 
-## faz agora
+## Faz agora
 
 1. Toca em **Criar moeda** e preenche as decisões da equipa.
 2. Toca em **Lançar** e espera pelo bloco.
@@ -266,15 +266,15 @@ A única coisa nossa é a taxa: antes de mover o valor, move a taxa para o tesou
 
 ---
 
-<!-- .slide: class="center-title" -->
+<!-- .slide: class="hero" -->
 
 <div class="eyebrow">parte 3 · 20 min</div>
 
-## pagar um <em>fino</em>
+## Pagar um <em>fino</em>
 
 ---
 
-## o terminal
+## O terminal
 
 <div class="cols">
   <div>
@@ -285,21 +285,21 @@ A única coisa nossa é a taxa: antes de mover o valor, move a taxa para o tesou
     </ul>
   </div>
   <div class="card">
-    <h3>uma equipa vende</h3>
+    <h3>Uma equipa vende</h3>
     <p>Configura o terminal com a sua moeda e escreve o preço do fino.</p>
   </div>
 </div>
 
 ---v
 
-## um pagamento, passo a passo
+## Um pagamento, passo a passo
 
 <div class="flow" style="--n:5">
   <div><b>terminal</b>Mostra um QR com moeda, destino e valor.</div>
   <div><b>câmara</b>Apontas o telemóvel. A carteira abre já com tudo preenchido.</div>
   <div><b>carteira</b>Mostra valor, taxa e saldo. Tocas em Pagar.</div>
   <div><b>rede</b>A transferência entra no próximo bloco, 2,4 s depois.</div>
-  <div class="hot"><b>terminal</b>Vê o evento na cadeia e mostra <code>pago_</code> com recibo.</div>
+  <div class="hot"><b>terminal</b>Vê o evento na cadeia e mostra <code>pago</code> com recibo.</div>
 </div>
 
 Note:
@@ -309,7 +309,7 @@ Cada venda tem um valor único nos últimos dígitos, para não confundir dois p
 
 ---
 
-## faz agora
+## Faz agora
 
 1. Uma equipa configura o terminal com a sua moeda.
 2. Escreve **2,50** e carrega em **Cobrar**.
@@ -318,15 +318,15 @@ Cada venda tem um valor único nos últimos dígitos, para não confundir dois p
 
 ---
 
-<!-- .slide: class="center-title" -->
+<!-- .slide: class="hero" -->
 
 <div class="eyebrow">parte 4 · 10 min</div>
 
-## o que <em>correu mal</em>?
+## O que <em>correu mal</em>?
 
 ---
 
-## perguntas para a sala
+## Perguntas para a sala
 
 - Alguém ficou sem PAS a meio? Porque é que isso importa?
 - Que moeda ninguém quis usar? Foi a taxa, a quantidade, o nome?
@@ -339,9 +339,9 @@ Os erros são a melhor parte. Ligar cada erro a um problema real: gás, confian�
 
 ---
 
-## do teste à vida real
+## Do teste à vida real
 
-| hoje | em produção |
+| Hoje | Em produção |
 |---|---|
 | rede de teste, PAS grátis | Polkadot Hub, DOT verdadeiro |
 | contrato sem auditoria própria | auditoria antes de lançar |
@@ -352,13 +352,13 @@ Os erros são a melhor parte. Ligar cada erro a um problema real: gás, confian�
 
 ---
 
-<!-- .slide: class="center-title" -->
+<!-- .slide: class="hero" -->
 
-# obrigado<em>_</em>
+# Obrigado
 
-<p class="sub">// web3up · iniciativa do acm feup</p>
+<p class="lead">WEB3UP, iniciativa do ACM FEUP.</p>
 
-<div class="meta">
-  <span class="hit">admin@web3up.org</span>
+<div class="pills">
+  <span class="primary">admin@web3up.org</span>
   <span>web3up.org</span>
 </div>
