@@ -27,9 +27,10 @@ Pedir já a toda a gente que tenha o telemóvel com bateria e o portátil aberto
 ## Hoje
 
 <div class="steps">
-  <div><i>1</i> Desenhar a moeda: supply, inflação, taxas</div>
-  <div><i>2</i> Lançar a moeda numa plataforma</div>
-  <div><i>3</i> Pagar um fino num terminal de pagamento</div>
+  <div><i>1</i> Uma nova internet?</div>
+  <div><i>2</i> Desenhar a moeda: supply, inflação, taxas</div>
+  <div><i>3</i> Lançar a moeda numa plataforma</div>
+  <div><i>4</i> Pagar um fino num terminal de pagamento</div>
 </div>
 
 <p class="muted" style="margin-top:48px">Moedas de teste. Não valem dinheiro. Podes partir tudo.</p>
@@ -44,7 +45,7 @@ Três passos, 90 minutos. No fim, cada equipa tem uma moeda a circular na sala.
 
 | Hora | O quê |
 |---|---|
-| 15:00 | porquê uma moeda |
+| 15:00 | uma nova internet? |
 | 15:10 | desenhar a moeda |
 | 15:35 | lançar a moeda |
 | 16:00 | pagar com ela no terminal |
@@ -54,64 +55,114 @@ Três passos, 90 minutos. No fim, cada equipa tem uma moeda a circular na sala.
 
 <!-- .slide: class="hero" -->
 
-<div class="eyebrow">parte 0 · 10 min</div>
+<div class="eyebrow">parte 1 · 10 min</div>
 
-## Porquê uma <em>moeda</em>?
+## Uma nova <em>internet</em>?
+
+Note:
+
+Adaptado da apresentação "A New Internet for Digital Products", PBA Lisboa, abril de 2026.
+github.com/BigTava/presentations
 
 ---
 
-## O banco que ninguém usava
+## O que é um serviço digital?
 
-- Abro um banco digital. Envias-me dinheiro, eu guardo, devolvo quando pedires.
-- Ninguém confia. Publico o código. Faço auditorias. Reescrevo tudo em Rust.
-- Continua sem clientes.
-- Registo o banco no Banco de Portugal. **De repente toda a gente confia.**
+<p class="lead">Software de que dependes para fazer algo que importa.</p>
 
 Note:
 
-Adaptado da abertura da Polkadot Blockchain Academy.
-A pergunta para a sala: porque é que confiamos no nosso banco? Quase ninguém sabe o que o código faz.
-Confiamos porque há uma autoridade que nos protege se o banco se portar mal.
+Pede a cada pessoa que pense na última app que usou. Gmail, Instagram, Discord, o banco.
+Quem é o dono? Quem corre o servidor? Quem pode mudar as regras amanhã? Quem pode expulsar-te? Quem lê os teus dados?
 
 ---v
 
-## Duas formas de confiar
+## A internet é ótima
+
+- Organizar ideias, texto e media. O Excel tem mais de **750 milhões** de utilizadores.
+- Falar com qualquer pessoa, em qualquer lado. O WhatsApp tem **3 mil milhões** por mês.
+- Enviar dinheiro. O PayPal move mais de **1,5 biliões de dólares** por ano.
+
+<p class="muted">Fontes: Microsoft Ignite 2019, Meta Q1 2025, PayPal Q4 2023.</p>
+
+---v
+
+## A internet é má
+
+- A Europa vai gastar **300 mil milhões de euros** no EuroStack para não depender de fornecedores estrangeiros.
+- A Meta deixou funcionários ler mensagens "cifradas de ponta a ponta" do WhatsApp.
+- **9** dos maiores bancos dos EUA fecharam contas a clientes dentro da lei.
+
+<p class="muted">Fontes: Bertelsmann Stiftung 2025, ação coletiva na Califórnia 2026, OCC 2025.</p>
+
+Note:
+
+Quatro sinais, uma direção. Nada disto é caso raro. É a forma do sistema.
+
+---
+
+## Como chegas a um serviço hoje
 
 <div class="cols">
   <div class="card">
-    <h3>Autoridade</h3>
-    <p>Um banco guarda o registo de quem tem quanto. Confias nele porque há regras, tribunais e polícia.</p>
+    <h3>Browser</h3>
+    <p>Escreves um endereço <code>https://</code>. O browser corre JavaScript descarregado de um servidor algures.</p>
   </div>
   <div class="card">
-    <h3>Matemática</h3>
-    <p>Milhares de computadores guardam o mesmo registo. Ninguém o muda sozinho. Confias porque podes verificar.</p>
+    <h3>App</h3>
+    <p>Instalas e abres. A app faz pedidos a um servidor algures.</p>
   </div>
 </div>
-
-> Uma blockchain é um registo partilhado que ninguém controla sozinho.
 
 ---v
 
-## Web 1, 2 e 3
+## Em qualquer dos casos estás a
 
-<div class="cols" style="--n:3">
-  <div class="card">
-    <h3>Web 1</h3>
-    <p><strong>ler.</strong> Páginas estáticas. Quem publica é quem tem um servidor.</p>
-  </div>
-  <div class="card">
-    <h3>Web 2</h3>
-    <p><strong>ler e escrever.</strong> Redes sociais. Tu crias, a plataforma fica com os dados e as regras.</p>
-  </div>
-  <div class="card">
-    <h3>Web 3</h3>
-    <p><strong>ler, escrever e possuir.</strong> O que é teu fica numa rede pública. A tua chave prova que é teu.</p>
-  </div>
-</div>
+- Correr **software que não consegues ver**
+- Em **infraestrutura que outra pessoa gere**
+- A **guardar dados e dinheiro** onde não mandas
+
+> Não é um erro. A web atual foi desenhada assim. A pergunta é se tem de ser assim.
+
+---
+
+## Três perguntas
+
+- Posso correr software que **consigo ver** de uma ponta à outra?
+- Posso correr a **infraestrutura**, ou confiar em quem a corre?
+- Posso ter **posse** dos meus dados e do meu dinheiro?
 
 Note:
 
-Uma moeda é o exemplo mais simples de "possuir" na internet. Por isso começamos por aqui.
+Uma pergunta por cada consequência do slide anterior. As três têm resposta com tecnologia que existe hoje. O resto do workshop é a terceira pergunta, aplicada a dinheiro.
+
+---v
+
+## A web 2.5 de hoje
+
+<div class="flow" style="--n:3">
+  <div><b>Frontend</b>React e Vite, publicado na Vercel ou num S3. Um pedido de remoção e desaparece.</div>
+  <div><b>Backend</b>Indexador e API na AWS de alguém. O mesmo problema.</div>
+  <div class="hot"><b>Contratos</b>Só isto vive mesmo na cadeia.</div>
+</div>
+
+<p class="muted" style="margin-top:28px">A lógica é verificável, mas dois terços continuam nas mãos de uma empresa.</p>
+
+---v
+
+## A pilha que queremos
+
+<div class="flow" style="--n:3">
+  <div><b>People Chain</b>Identidade e mensagens entre pessoas.</div>
+  <div class="hot"><b>Asset Hub</b>Moedas e contratos. É aqui que hoje lançamos a nossa.</div>
+  <div><b>Bulletin Chain</b>Guarda o frontend onde ninguém o apaga.</div>
+</div>
+
+<p class="lead" style="margin-top:28px">Cada peça ou a corres tu, ou a consegues verificar.</p>
+
+Note:
+
+O backend centralizado desaparece. Fica um frontend e um backend numa rede que nenhuma empresa controla. Uma moeda é o exemplo mais simples de "posse" nesta internet. Por isso começamos por aí.
 
 ---v
 
@@ -120,7 +171,7 @@ Uma moeda é o exemplo mais simples de "possuir" na internet. Por isso começamo
 <div class="cols">
   <div>
     <ul>
-      <li><strong>Polkadot Hub TestNet</strong>, a rede de teste da Polkadot</li>
+      <li><strong>Polkadot Hub TestNet</strong>, a rede de teste do Asset Hub</li>
       <li>um bloco novo a cada <em>2,4 segundos</em></li>
       <li><strong>PAS</strong> é a moeda da rede. Paga o trabalho de cada transação (gás)</li>
       <li>aceita contratos em Solidity, como a Ethereum</li>
@@ -151,7 +202,7 @@ Isto demora: começar logo e seguir com a parte 1 em paralelo.
 
 <!-- .slide: class="hero" -->
 
-<div class="eyebrow">parte 1 · 25 min</div>
+<div class="eyebrow">parte 2 · 25 min</div>
 
 ## Desenhar a <em>moeda</em>
 
@@ -214,7 +265,7 @@ Passar pelas mesas. Perguntas boas para fazer: quem vai querer a vossa moeda? O 
 
 <!-- .slide: class="hero" -->
 
-<div class="eyebrow">parte 2 · 25 min</div>
+<div class="eyebrow">parte 3 · 25 min</div>
 
 ## Lançar a <em>moeda</em>
 
@@ -268,7 +319,7 @@ A única coisa nossa é a taxa: antes de mover o valor, move a taxa para o tesou
 
 <!-- .slide: class="hero" -->
 
-<div class="eyebrow">parte 3 · 20 min</div>
+<div class="eyebrow">parte 4 · 20 min</div>
 
 ## Pagar um <em>fino</em>
 
@@ -320,7 +371,7 @@ Cada venda tem um valor único nos últimos dígitos, para não confundir dois p
 
 <!-- .slide: class="hero" -->
 
-<div class="eyebrow">parte 4 · 10 min</div>
+<div class="eyebrow">parte 5 · 10 min</div>
 
 ## O que <em>correu mal</em>?
 
