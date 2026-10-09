@@ -31,6 +31,7 @@ Pedir já a toda a gente que tenha o telemóvel com bateria e o portátil aberto
   <div><i>2</i> Desenhar uma moeda?</div>
   <div><i>3</i> Lançar um programa numa plataforma de computação descentralizada</div>
   <div><i>4</i> Pagar um fino num terminal de pagamento</div>
+  <div><i>5</i> WEB3UP, um playground para construir ideias</div>
 </div>
 
 Note:
@@ -398,6 +399,34 @@ Os erros são a melhor parte. Ligar cada erro a um problema real: gás, confian�
 | um telemóvel, uma chave | chaves partilhadas por várias pessoas |
 
 > Uma moeda indexada ao euro é dinheiro eletrónico e precisa de licença. Um vale para cerveja, usado só no bar, quase nunca precisa.
+
+---
+
+<!-- .slide: class="hero" -->
+
+<div class="eyebrow">parte 6 · 5 min</div>
+
+## WEB3UP, um <em>playground</em><br>para construir ideias
+
+---
+
+## O que é a WEB3UP
+
+- Iniciativa do **ACM FEUP**, aberta a estudantes de toda a U.Porto
+- Aprender a fazer: desafios reais, com acompanhamento, em IA, Web3 e robótica
+- Projetos com parceiros, como a RMTerra e a AEFEUP
+- Mentoria, financiamento e contacto com quem contrata
+
+---v
+
+## Ideias para continuar
+
+- Carteira de bebidas da AEFEUP, com a moeda de hoje a sério
+- Proteção de áreas verdes e reflorestação, com a RMTerra
+- O terminal SUNMI a imprimir recibos de papel
+- A tua ideia: traz, e fazemos um projeto
+
+<p class="lead" style="margin-top:28px">Escreve para admin@web3up.org ou entra em web3up.org.</p>
 
 ---
 
