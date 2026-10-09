@@ -28,12 +28,10 @@ Pedir já a toda a gente que tenha o telemóvel com bateria e o portátil aberto
 
 <div class="steps">
   <div><i>1</i> Uma nova internet?</div>
-  <div><i>2</i> Desenhar a moeda: supply, inflação, taxas</div>
-  <div><i>3</i> Lançar a moeda numa plataforma</div>
+  <div><i>2</i> Desenhar uma moeda?</div>
+  <div><i>3</i> Lançar um programa numa plataforma de computação descentralizada</div>
   <div><i>4</i> Pagar um fino num terminal de pagamento</div>
 </div>
-
-<p class="muted" style="margin-top:48px">Moedas de teste. Não valem dinheiro. Podes partir tudo.</p>
 
 Note:
 
