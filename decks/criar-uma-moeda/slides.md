@@ -821,23 +821,33 @@ A solução de referência está em evm/ do repositório público web3uprising/m
 <pre class="prompt">Cria a carteira da tua moeda, uma app web para o telemóvel.
 <span></span>
 <b>Contexto</b>
-- A moeda do Level 1 está na Polkadot Devnet.
-- Usa Vite, TypeScript e viem. Sem servidor.
-- Publica num domínio .dot com o pad, como explica
-  docs.polkadotcommunity.foundation.
+- Trabalha numa pasta nova e vazia. Não uses ficheiros meus.
+- Em caso de dúvida, consulta a solução de referência em
+  github.com/web3uprising/mybeer, na pasta apps/wallet.
+- A moeda do Level 1 está na variável COIN_ADDRESS, na Polkadot
+  Hub TestNet, chain id 420420417, RPC https://eth-rpc-testnet.polkadot.io/.
+- Vite com vanilla-ts, viem, qrcode e jsqr. Sem servidor, sem React.
+- Uma só página que nunca recarrega nem navega: o gateway .dot
+  corre a app numa moldura e perde os parâmetros se recarregar.
+- Dentro do gateway a câmara só abre depois de
+  requestDevicePermission("Camera") de @parity/product-sdk-host.
 <span></span>
 <b>A carteira</b>
-- Cria a chave privada no browser e guarda-a só ali.
-- Mostra o saldo de PAS e da tua moeda.
-- Receber mostra o endereço e um QR.
-- Enviar lê um QR ou um endereço e envia moedas.
-- Pagar lê o QR do terminal e paga o valor pedido.
+- Gera uma mnemónica BIP-39 de 12 palavras no browser e guarda-a
+  só no localStorage. Mostra as palavras e aceita importar outra.
+- Mostra o endereço e o saldo de PAS e da moeda.
+- Receber mostra o endereço e um QR com o endereço.
+- Enviar aceita um endereço escrito ou lido por QR e envia moeda.
+- Pagar lê um QR ethereum:moeda@420420417/transfer?address=…&uint256=…,
+  ou um link com #pay= e isso codificado, e também abre
+  com #pay= no URL. Mostra valor e destino, confirma e envia.
 <span></span>
 <b>Passos</b>
-1. Cria o projeto com Vite.
-2. Faz uma só página que nunca recarrega.
-3. Testa no telemóvel, com a câmara.
-4. Publica com o pad e abre o link .dot.</pre>
+1. Cria o projeto e os ecrãs. Corre npm run build.
+2. Instala npm i -g @polkadot-community-foundation/polkadot-app-deploy@latest
+   e publica: pad dist $DOT_NAME.dot --env devnet --mnemonic "$DOTNS_MNEMONIC".
+   A conta já tem PAS, está mapeada e autorizada no Bulletin.
+3. Responde só com o link https://$DOT_NAME.dev-dot.li.</pre>
   </div>
 </div>
 
@@ -845,6 +855,7 @@ Note:
 
 Level 2 é a app de quem paga. A moeda já existe, agora precisa de uma carteira.
 O prompt pede uma só página que nunca recarrega, porque o gateway .dot corre a app numa moldura.
+A referência está em apps/wallet do repositório público web3uprising/mybeer. O prompt foi corrido tal como está, numa pasta vazia, e publicou a carteira num .dot.
 
 ---
 
@@ -935,20 +946,34 @@ A centralizada confia no emissor, como o banco do início. A garantida por cript
 
 ---
 
-## O que é a WEB3UP
+## O que é a <em>WEB3UP</em>
 
-- Iniciativa do **ACM FEUP**, aberta a estudantes de toda a U.Porto
-- Aprender a fazer: desafios reais, com acompanhamento, em IA, Web3 e robótica
-- Projetos com parceiros, como a RMTerra e a AEFEUP
-- Mentoria, financiamento e contacto com quem contrata
+<div class="org">
+  <svg class="org-lines" viewBox="0 0 1120 420"><path d="M560 84V112M220 112H780M220 112V140M780 112V140"/><path d="M780 206V232M540 232H1020"/><path d="M540 232V256"/><path d="M780 232V256"/><path d="M1020 232V256"/><path d="M540 318V336M478 336H602M478 336V352M540 336V352M602 336V352"/><path d="M780 318V336M718 336H842M718 336V352M780 336V352M842 336V352"/><path d="M1020 318V336M958 336H1082M958 336V352M1020 336V352M1082 336V352"/></svg>
+  <div class="org-root" style="left:560px"><img src="../../assets/img/logo-acm-feup.webp" alt="ACM FEUP"><span>Grupo de Web3</span></div>
+  <div class="org-node" style="left:220px">Comunidade</div>
+  <div class="org-node hot" style="left:780px">WEB3UP</div>
+  <span class="org-partner aefeup" style="left:540px"><img src="../../assets/img/logo-aefeup.svg" alt="AE FEUP"></span><span class="org-partner dark" style="left:780px"><img src="../../assets/img/logo-rmterra.png" alt="RMTerra"></span><span class="org-partner more" style="left:1020px">e mais</span>
+  <span class="org-fac" style="left:478px">FEUP</span><span class="org-fac" style="left:540px">FEP</span><span class="org-fac" style="left:602px">FBAUP</span><span class="org-fac" style="left:718px">FEUP</span><span class="org-fac" style="left:780px">FCUP</span><span class="org-fac" style="left:842px">FLUP</span><span class="org-fac" style="left:958px">FMUP</span><span class="org-fac" style="left:1020px">FDUP</span><span class="org-fac" style="left:1082px">ISEP</span>
+</div>
+
+<p class="lead org-tag">A WEB3UP é a primeira associação de estudantes descentralizada da Europa.</p>
+
+Note:
+
+A WEB3UP nasce no grupo de Web3 do ACM FEUP.
+Divide-se em dois: a comunidade e a WEB3UP.
+A WEB3UP trabalha em projetos com parceiros como a AE FEUP e a RMTerra, em IA, Web3 e robótica. Cada projeto junta estudantes de várias faculdades da U.Porto: FEUP, FEP, FBAUP e outras.
+Há mentoria, financiamento e contacto com quem contrata.
+É a primeira associação de estudantes descentralizada da Europa.
 
 ---v
 
 ## Ideias para continuar
 
 - Carteira de bebidas da AEFEUP, com a moeda de hoje a sério
-- Proteção de áreas verdes e reflorestação, com a RMTerra
-- O terminal SUNMI a imprimir recibos de papel
+- Proteção de áreas verdes e reflorestação, com a [RMTerra](https://www.rmterra.org/)
+- Aplicação de governação da associação, para votar decisões
 - A tua ideia: traz, e fazemos um projeto
 
 <p class="lead" style="margin-top:28px">Escreve para admin@web3up.org ou entra em web3up.org.</p>
