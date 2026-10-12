@@ -1,6 +1,6 @@
 ---
 title: Criar uma moeda
-description: Workshop WEB3UP x ACM FEUP. Desenhar, lançar e pagar um fino com uma moeda própria na Polkadot Hub TestNet.
+description: Workshop WEB3UP x ACM FEUP. Desenhar, lançar e pagar um fino com uma moeda própria na Polkadot Devnet.
 ---
 
 <!-- .slide: class="hero" -->
@@ -446,7 +446,7 @@ Nenhum dos dois passa por um datacenter de uma empresa.
 
 Note:
 
-A mesma ideia na rede Ethereum. O telemóvel e o terminal falam com a rede Ethereum em vez da Polkadot Hub.
+A mesma ideia na rede Ethereum. O telemóvel e o terminal falam com a rede Ethereum em vez da Polkadot Devnet.
 A forma é igual: um programa numa rede de computadores de pessoas diferentes. Mudam a velocidade, o custo e quem corre os computadores.
 
 ---v
@@ -511,7 +511,7 @@ A forma é igual: um programa numa rede de computadores de pessoas diferentes. M
 
 Note:
 
-A mesma ideia na rede Solana. O telemóvel e o terminal falam com a rede Solana em vez da Polkadot Hub.
+A mesma ideia na rede Solana. O telemóvel e o terminal falam com a rede Solana em vez da Polkadot Devnet.
 A forma é igual: um programa numa rede de computadores de pessoas diferentes. Mudam a velocidade, o custo e quem corre os computadores.
 
 ---v
@@ -576,7 +576,7 @@ A forma é igual: um programa numa rede de computadores de pessoas diferentes. M
 
 Note:
 
-A mesma ideia na rede Avalanche. O telemóvel e o terminal falam com a rede Avalanche em vez da Polkadot Hub.
+A mesma ideia na rede Avalanche. O telemóvel e o terminal falam com a rede Avalanche em vez da Polkadot Devnet.
 A forma é igual: um programa numa rede de computadores de pessoas diferentes. Mudam a velocidade, o custo e quem corre os computadores.
 
 ---v
@@ -641,7 +641,7 @@ A forma é igual: um programa numa rede de computadores de pessoas diferentes. M
 
 Note:
 
-A mesma ideia na rede Polygon. O telemóvel e o terminal falam com a rede Polygon em vez da Polkadot Hub.
+A mesma ideia na rede Polygon. O telemóvel e o terminal falam com a rede Polygon em vez da Polkadot Devnet.
 A forma é igual: um programa numa rede de computadores de pessoas diferentes. Mudam a velocidade, o custo e quem corre os computadores.
 
 
@@ -707,7 +707,7 @@ A forma é igual: um programa numa rede de computadores de pessoas diferentes. M
 
 Note:
 
-E na Polkadot Hub, onde vamos lançar hoje. O telemóvel e o terminal falam com a rede Polkadot.
+E na Polkadot Devnet, onde vamos lançar hoje. O telemóvel e o terminal falam com a rede Polkadot.
 A forma é igual: um programa numa rede de computadores de pessoas diferentes.
 
 ---v
@@ -763,17 +763,17 @@ Vamos fazer agora.
 <div class="level">
   <div class="level-intro">
     <h2>Level 1</h2>
-    <p class="lead">Lança a tua moeda na Polkadot Hub TestNet.</p>
+    <p class="lead">Lança a tua moeda na Polkadot Devnet.</p>
     <img class="level-mon" src="../../assets/img/charmander.png" alt="Charmander">
   </div>
   <div class="prompt-window long">
     <div class="cw-bar"><i></i><i></i><i></i><span>prompt</span></div>
-<pre class="prompt">Lança uma moeda ERC-20 na Polkadot Hub TestNet.
+<pre class="prompt">Lança uma moeda ERC-20 na Polkadot Devnet.
 <span></span>
 <b>Contexto</b>
 - Em caso de dúvida, consulta a solução de referência em
   github.com/web3uprising/mybeer, na pasta evm/.
-- Rede: Polkadot Hub TestNet, chain id 420420417,
+- Rede: Polkadot Devnet, chain id 420420417,
   RPC https://eth-rpc-testnet.polkadot.io/,
   explorador https://blockscout-testnet.polkadot.io.
 - Hardhat 2 com @nomicfoundation/hardhat-toolbox-viem,
@@ -795,7 +795,7 @@ Vamos fazer agora.
 1. Cria um projeto Hardhat com OpenZeppelin 5.
 2. Escreve contracts/Moeda.sol com ERC20 e Ownable.
 3. Testa saldo inicial, máximo, inflação e taxa até passar.
-4. Lança o contrato na Polkadot Hub TestNet.
+4. Lança o contrato na Polkadot Devnet.
 5. Envia 100 FINO para 0x4Da06C4382D3A145A954981dE969c11DB9Ced416.
 6. Responde só com endereço, link do explorador e hash.</pre>
   </div>
@@ -821,7 +821,7 @@ A solução de referência está em evm/ do repositório público web3uprising/m
 <pre class="prompt">Cria a carteira da tua moeda, uma app web para o telemóvel.
 <span></span>
 <b>Contexto</b>
-- A moeda do Level 1 está na Polkadot Hub TestNet.
+- A moeda do Level 1 está na Polkadot Devnet.
 - Usa Vite, TypeScript e viem. Sem servidor.
 - Publica num domínio .dot com o pad, como explica
   docs.polkadotcommunity.foundation.
@@ -859,7 +859,7 @@ O prompt pede uma só página que nunca recarrega, porque o gateway .dot corre a
 <pre class="prompt">Cria o terminal de pagamento da loja para o SUNMI V3.
 <span></span>
 <b>Contexto</b>
-- Aceita a moeda do Level 1, na Polkadot Hub TestNet.
+- Aceita a moeda do Level 1, na Polkadot Devnet.
 - Corre no Chrome do SUNMI, sem app instalada.
 - Usa Vite, TypeScript e viem. Sem servidor.
 <span></span>
