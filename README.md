@@ -17,7 +17,7 @@ npm run build        # site estático em build/
 
 `---` separa slides e `---v` cria um slide vertical por baixo do anterior. `Note:` começa as
 notas de quem fala, que aparecem ao carregar em S. As classes do tema estão em
-`assets/theme.css`, por exemplo `cols`, `card`, `flow`, `steps` e `meta`.
+`assets/theme.css` e seguem o site web3up.org: `hero` para slides de abertura com o gradiente, `cols`, `card`, `flow`, `steps`, `pills`, `eyebrow` e `lead`.
 
 Para uma apresentação nova, cria `decks/<nome>/slides.md` com `title` e `description` no
 cabeçalho. A página inicial lista-a automaticamente.
