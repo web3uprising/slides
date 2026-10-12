@@ -771,7 +771,6 @@ Vamos fazer agora.
 <pre class="prompt">Lança uma moeda ERC-20 na Polkadot Hub TestNet.
 <span></span>
 <b>Contexto</b>
-- Trabalha numa pasta nova e vazia. Não uses ficheiros meus.
 - Em caso de dúvida, consulta a solução de referência em
   github.com/web3uprising/mybeer, na pasta evm/.
 - Rede: Polkadot Hub TestNet, chain id 420420417,
