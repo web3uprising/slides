@@ -1364,3 +1364,79 @@
 .reveal table.peg thead small { display: block; margin-top: 4px; font-family: var(--mono); font-weight: 400; font-size: 13px; letter-spacing: 0; color: var(--gray-500); }
 .reveal table.peg tbody th { width: 150px; font-family: var(--sans); font-weight: 600; font-size: 18px; }
 .reveal table.peg tbody tr:nth-child(odd) { background: var(--gray-50); }
+
+.reveal .org { position: relative; width: 1120px; height: 392px; margin: 0 auto; }
+
+.reveal .org-lines { position: absolute; inset: 0; width: 1120px; height: 420px; overflow: visible; }
+.reveal .org-lines path { fill: none; stroke: var(--gray-400); stroke-width: 2.5; }
+
+.reveal .org > div,
+.reveal .org > span { position: absolute; transform: translateX(-50%); }
+
+.reveal .org-root {
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 84px;
+  padding: 0 24px 0 16px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: var(--white);
+  box-shadow: inset 0 0 0 2px var(--gray-950);
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.reveal .org-root img { height: 56px; margin: 0; }
+
+.reveal .org-node {
+  top: 140px;
+  height: 66px;
+  padding: 0 28px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  background: var(--gray-50);
+  box-shadow: inset 0 0 0 1.5px var(--ring-strong);
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 66px;
+  white-space: nowrap;
+}
+
+.reveal .org-node.hot { background: var(--hero); box-shadow: none; }
+
+.reveal .org-fac {
+  top: 352px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  background: var(--gray-50);
+  box-shadow: inset 0 0 0 1px var(--ring-strong);
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.reveal .org-partner {
+  top: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 62px;
+  box-sizing: border-box;
+  border-radius: 14px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.reveal .org-partner.aefeup { background: var(--gray-950); padding: 0 18px; }
+.reveal .org-partner.aefeup img { width: 110px; height: auto; margin: 0; }
+.reveal .org-partner.dark { background: #2d2d23; padding: 8px 14px; }
+.reveal .org-partner.dark img { max-height: 44px; max-width: 120px; margin: 0; }
+.reveal .org-partner.more { box-shadow: inset 0 0 0 1.5px var(--gray-400); color: var(--gray-500); border: 0; background: none; outline: 1.5px dashed var(--gray-400); outline-offset: -1.5px; }
+
+.reveal .org-tag { max-width: none; margin: 8px 0 0; text-align: center; }
